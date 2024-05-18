@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="#ffffff"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        >
+
+
+
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img"
+            android:id="@+id/imageView"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Balance"
+                android:layout_marginStart="150dp"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+
+            <TextView
+               android:id="@+id/tvBlance"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text=""
+                android:layout_marginStart="150dp"
+                android:textSize="22dp"
+
+                android:textColor="#ffffff"
+                android:background="@drawable/button"
+                android:gravity="center"
+
+                />
+
+
+            <TextView
+               android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="YesterDay's Profit"
+                android:layout_marginStart="150dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tvProfit"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text=""
+                android:layout_marginStart="150dp"
+                android:textSize="22dp"
+
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button"
+                android:gravity="center"
+
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/layCircle"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Profit"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tvTodayProfit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Investment"
+    android:textSize="35dp"
+    android:textColor="#000000"
+
+    />
+
+
+
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anima" />
+
+
+
+
+
+
+
+
+</LinearLayout>
